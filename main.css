@@ -130,9 +130,21 @@ body {
   }
 
 /* FOOTER DIV, HOPEFULLY TO BE SOMEHOW TURNED INTO THE MENU*/
+
 .footer {
  background-color: purple;
  padding: 2%;
  position: fixed;
+}
 
+/*NAV STUFF*/
+
+#toggle { font-size: 24px; }
+nav {
+  background-color: #333;
+  text-align: left;
+}
+
+nav ul { display: none; }
+a { color: #ccc; text-decoration: none;
 }
