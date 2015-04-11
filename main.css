@@ -2,82 +2,100 @@
 
 /*GENERAL BLAH BLAH BLAH*/
 
- .sitewrap {
-  
- }
+.sitewrap {
 
-   body {
-    background-color: #f8f8ff;
-    font-family: georgia, monospace;
-    overflow-x: hidden;
-   }
+}
 
-   main {
-    margin-left: 5%;
-    margin-right: 5%;
-
-   }
+body {
+ background-color: #f8f8ff;
+ font-family: georgia, monospace;
+}
 
 /******* HEADER ******/
 
 
-   header {
-    float: top;
-    background-color: #f8f8ff;
-    height: 85px;
+ header {
+  float: top;
+  background-color: lightgreen;
+  height: 5em;
+  padding: 2%;
+  text-align: center;
+ }
 
-    padding-left: 20%;
-    padding-right: 20%;
+ h1 {
+  padding: 1%;
+  display: inline;
+  overflow: auto;
 
-   }
+ }
+
+ /******* MAIN CONTENT STUFF ******/
 
 
 
-    h1 {
-     display: block;
-     overflow: auto;
+ main {
+  margin-left: 5%;
+  margin-right: 5%;
+
+ }
+
+
+  section {
+  background-color: red;
+  height: 26em;
+  padding: 3%;
+  padding-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0%;
+  overflow: scroll;
+
+  }
+
+    section::-webkit-scrollbar {
+    display: none;
     }
 
 
+  article {
+  padding: 1%;
+  overflow: auto;
+  background-color: pink;
 
+  }
 
-    /******* ENTRY STUFF ******/
+  .entry {
+   padding: 2%;
+   margin: 1%;
 
+   background-color: #f8f8ff;
 
-   section {
-     background-color: red;
-     height: 500px;
-     padding: 1%;
-     margin-left: 5%;
-     margin-right: 5%;
-     margin-top: 1%;
-     overflow: scroll;
+  }
 
-   }
-
-   article {
-
-     padding: 3%;
-     overflow: scroll;
-     background-color: pink;
-
-   }
-
-   .entry {
-
-    padding: 3%;
-    background-color: #f8f8ff;
-
-   }
 
 /******** STYLING FOR TEXT & LINKS  ************/
 
+
+  p {
+   padding: 3%;
+   line-height: 1.5em;
+   text-align: justify;
+  }
+
+
+/*ARTICLE TITLES*/
+
+  h2 {
+  width: 8em;
+   background-color: #f8f8ff;
+  }
+
   /*APPLICABLE TO ALL LINKS*/
 
-  a {
-   color: black;
-   text-decoration: none;
-  }
+ a {
+  color: black;
+  text-decoration: none;
+ }
 
   a:visited {
    color: black;
@@ -85,95 +103,15 @@
 
   }
 
-  a:hover {
-    color: gray;
-    text-decoration: none;
-   }
-
-
-   /*ARTICLE TITLES*/
-
-   h2 {
-    padding: 5px;
-    background-color: #f8f8ff;
-
-   }
-
-
-   h3 {
-    background-color: #f8f8ff;
-    padding: 3px;
-    font-style: italic;
-    font-size: 13px;
-
-   }
-
-
-
-   /*ALL ARTICLE TEXT, AND FOOTER TEXT*/
-
-   p {
-    margin: 3%;
-    text-align: justify;
-   }
-
-
-
- .navigation {
-  display: inline;
-  list-style: none;
- }
-
-
-
-
-
-
-   /*MEDIA QUERIES BEGIN */
-
-  @media screen and (min-width: 500px) {
-
-  .sitewrap {
-
+ a:hover {
+   color: gray;
+   text-decoration: none;
   }
 
-   header {
+/* FOOTER DIV, HOPEFULLY TO BE SOMEHOW TURNED INTO THE MENU*/
+.footer {
+ background-color: purple;
+ padding: 2%;
+ position: fixed;
 
-   }
-
-   main {
-
-   }
-
-
-   section {
-
-   }
-
-
-  }
-
-
-
-  @media screen and (min-width: 900px) {
-
-   .sitewrap {
-
-   }
-
-
-   header {
-
-   }
-
-   main {
-
-   }
-
-
-   section {
-
-   }
-
-
-  }
+}
