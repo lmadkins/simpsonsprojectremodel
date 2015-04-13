@@ -7,7 +7,7 @@ position: fixed;
 padding: -1%;
   float: top;
  margin-bottom: -10%;
-background-color: lightblue;
+background-color: #f8f8ff;
 z-index: 1;
 }
 
@@ -37,7 +37,7 @@ body {
 
  header {
   float: top;
-  background-color: lightgreen;
+  background-color: #f8f8ff;
   height: 5em;
   padding: 2%;
   text-align: center;
@@ -62,7 +62,7 @@ body {
 
 
   section {
-  background-color: red;
+  background-color: #f8f8ff;
   height: 26em;
   padding: 3%;
   padding-top: 10%;
@@ -81,7 +81,7 @@ body {
   article {
   padding: 1%;
   overflow: auto;
-  background-color: pink;
+  background-color: #f8f8ff;
 
   }
 
@@ -132,7 +132,10 @@ body {
 /* FOOTER DIV, HOPEFULLY TO BE SOMEHOW TURNED INTO THE MENU*/
 
 /*.footer {
- background-color: purple;
+ background-color: purple;*/
+
+/*.footer {
+ background-color: #f8f8ff;
  padding: 2%;
  position: fixed;
 }*/
