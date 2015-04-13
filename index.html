@@ -11,7 +11,7 @@
  </head>
 
 
- <body>
+ <body class="cbp-spmenu-push">
  <div class="site-wrap">
 
   <header>
@@ -89,22 +89,46 @@
 
  </div> <!--Wrapper div ends-->
 
+ <!-- FOOTER TO BE TURNED INTO NAV TOGGLE MENU -->
   <footer>
-   <nav role='navigation'>
-     <a href="#" id="toggle">=Menu=</a>
-   <ul>
-     <li><a href="#article3">Hank Scorpio</a></li>
-     <li><a href="#article2">SherryBobbins</a></li>
-     <li><a href="#article1"> Frank Grimes</a></li>
-   </ul>
-   </nav>
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+    <h3>Menu</h3>
+    <a href="#article3">Hank Scorpio</a>
+    <a href="#article2">Sherry Bobbins</a>
+    <a href="#article1">Frank Grimes</a>
+    </nav>
+
+    <div class="container">
+    <div class="main">
+      <section class="buttonset">
+        <!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
+        <button id="showLeftPush">=Menu=</button>
+      </section>
+    </div>
+    </div>
   </footer>
 
+ <!-- SO MANY SCRIPTS -->
   <script src="js/main.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 
+  <script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+	</script>
 
  </body>
 
