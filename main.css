@@ -131,15 +131,15 @@ body {
 
 /* FOOTER DIV, HOPEFULLY TO BE SOMEHOW TURNED INTO THE MENU*/
 
-.footer {
+/*.footer {
  background-color: purple;
  padding: 2%;
  position: fixed;
-}
+}*/
 
 /*NAV STUFF*/
 
-#toggle { font-size: 24px; }
+/*#toggle { font-size: 24px; }
 nav {
   background-color: #333;
   text-align: left;
@@ -147,4 +147,4 @@ nav {
 
 nav ul { display: none; }
 a { color: #ccc; text-decoration: none;
-}
+}*/
