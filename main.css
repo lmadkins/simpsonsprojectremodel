@@ -13,15 +13,25 @@ z-index: 1;
 
 /*GENERAL BLAH BLAH BLAH*/
 
- .sitewrap {
+  .cbp-spmenu-push {
+   height: 55em;
+  }
 
- }
+  .sitewrap {
+   height: 55em;
+  }
+
 
    body {
     background-color: #f8f8ff;
     font-family: georgia, monospace;
     overflow-x: hidden;
    }
+
+
+      body::-webkit-scrollbar {
+       display: none;
+       }
 
 
 /******* HEADER ******/
@@ -31,7 +41,7 @@ z-index: 1;
   float: top;
   background-color: #f8f8ff;
   height: 5em;
-  padding: 2%;
+  padding: 1%;
   text-align: center;
  }
 
@@ -49,7 +59,6 @@ z-index: 1;
  main {
   margin-left: 5%;
   margin-right: 5%;
-
  }
 
 
@@ -57,7 +66,7 @@ z-index: 1;
   background-color: #f8f8ff;
   height: 26em;
   padding: 3%;
-  padding-top: 10%;
+  padding-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 0%;
@@ -125,23 +134,34 @@ z-index: 1;
 
 
 .footer {
- background-color: #f8f8ff;
- padding: 2%;
+ background-color: #47a3da;
+ padding-top: 5%;
  position: fixed;
 }
 
 /******** CLASSIE PLUGIN CSS  ************/
 /* General styles for all menus */
 
+
 .cbp-spmenu {
 	background: #47a3da;
 	position: fixed;
  overflow: scroll;
 }
+
 .cbp-spmenu::-webkit-scrollbar {
 display: none;
 }
 
+.buttonset {
+
+    height: 2em;
+    padding: 1%;
+    margin-left: none;
+    margin-right: none;
+    margin-top: none;
+
+}
 
 .cbp-spmenu h3 {
 	color: #afdefa;
