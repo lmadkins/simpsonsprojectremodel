@@ -136,7 +136,12 @@ z-index: 1;
 .cbp-spmenu {
 	background: #47a3da;
 	position: fixed;
+ overflow: scroll;
 }
+.cbp-spmenu::-webkit-scrollbar {
+display: none;
+}
+
 
 .cbp-spmenu h3 {
 	color: #afdefa;
