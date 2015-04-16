@@ -14,11 +14,11 @@ z-index: 1;
 /*GENERAL BLAH BLAH BLAH*/
 
   .cbp-spmenu-push {
-   height: 55em;
+   height: 40em;
   }
 
   .sitewrap {
-   height: 55em;
+   height: 40em;
   }
 
 
@@ -102,6 +102,7 @@ z-index: 1;
    padding: 3%;
    line-height: 1.5em;
    text-align: justify;
+   width: auto;
   }
 
 
@@ -110,6 +111,7 @@ z-index: 1;
   h2 {
   width: 8em;
    background-color: #f8f8ff;
+   width: auto;
   }
 
   /*APPLICABLE TO ALL LINKS*/
@@ -157,10 +159,13 @@ display: none;
 
     height: 2em;
     padding: 1%;
-    margin-left: none;
-    margin-right: none;
-    margin-top: none;
-
+    padding-bottom: 10%;
+    position: fixed;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: auto;
 }
 
 .cbp-spmenu h3 {
@@ -236,4 +241,72 @@ display: none;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width: 400px) {
+
+  main {
+   margin-top: 5%;;
+   height: 29em;
+   padding-top: 10%;
+   margin-left: 5%;
+   margin-right: 5%;
+   width: auto;
+  }
+
+  section {
+
+   padding-top: 10%;
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-top: 0%;
+   overflow: scroll;
+
+   }
+
+     section::-webkit-scrollbar {
+     display: none;
+     }
+
+
+  article {
+
+  }
+
+
+   article::-webkit-scrollbar {
+   display: none;
+   }
+
+
+  header {
+   width: 100%;
+   height: 25%;
+   padding: -1%;
+   float: top;
+   margin-bottom: -10%;
+   background-color: #f8f8ff;
+   z-index: 1;
+  }
+
+  h1 {
+   padding: 1%;
+   display: inline;
+   overflow: auto;
+
+  }
+
+
+  .footer {
+   background-color: #47a3da;
+   padding-top: 5%;
+   margin: 5%;
+   position: fixed;
+  }
+
 }
