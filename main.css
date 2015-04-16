@@ -313,7 +313,7 @@ display: none;
 }
 
 
-@media screen and (max-width: 401, min-width: 950px) {
+@media screen and (max-width: 401, min-width: 960px) {
 
  .cbp-spmenu-push {
 
@@ -357,5 +357,69 @@ display: none;
      margin: 5%;
      position: fixed;
     }
+
+}
+
+@media screen and (min-width: 961px, max-width: 1800px) {
+
+
+ .cbp-spmenu-push {
+  margin-bottom: 10%;
+  margin: 0%;
+  overflow: scroll;
+ }
+
+ .sitewrap {
+
+  margin: 0%;
+  overflow: scroll;
+ }
+
+ main {
+
+  height: 23em;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: auto;
+ }
+
+ section {
+
+  padding-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0%;
+  overflow: scroll;
+
+  }
+
+    section::-webkit-scrollbar {
+    display: none;
+    }
+
+    .footer {
+     background-color: #47a3da;
+     padding-top: 4%;
+     margin: 5%;
+     position: fixed;
+    }
+
+}
+
+.buttonset {
+
+    height: 2em;
+    padding: 1%;
+    padding-bottom: 10%;
+    position: fixed;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    overflow: auto;
+}
+
 
 }
