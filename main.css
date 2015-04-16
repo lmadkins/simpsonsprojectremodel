@@ -251,9 +251,11 @@ display: none;
 @media screen and (max-width: 400px) {
 
   main {
-   margin-top: 5%;;
-   height: 29em;
-   padding-top: 10%;
+   margin-top: 5%;
+   margin-bottom: 5%;
+   height: 70%;
+   padding-top: 3%;
+   padding-bottom: 3%;
    margin-left: 5%;
    margin-right: 5%;
    width: auto;
@@ -261,7 +263,7 @@ display: none;
 
   section {
 
-   padding-top: 10%;
+   padding-top: 3%;
    margin-left: 5%;
    margin-right: 5%;
    margin-top: 0%;
@@ -277,7 +279,6 @@ display: none;
   article {
 
   }
-
 
    article::-webkit-scrollbar {
    display: none;
@@ -308,5 +309,53 @@ display: none;
    margin: 5%;
    position: fixed;
   }
+
+}
+
+
+@media screen and (max-width: 401, min-width: 950px) {
+
+ .cbp-spmenu-push {
+
+  margin: 0%;
+  overflow: scroll;
+ }
+
+ .sitewrap {
+
+  margin: 0%;
+  overflow: scroll;
+ }
+
+ main {
+
+  height: 25em;
+  padding-top: 1%;
+  padding-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: auto;
+ }
+
+ section {
+
+  padding-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 0%;
+  overflow: scroll;
+
+  }
+
+    section::-webkit-scrollbar {
+    display: none;
+    }
+
+    .footer {
+     background-color: #47a3da;
+     padding-top: 5%;
+     margin: 5%;
+     position: fixed;
+    }
 
 }
