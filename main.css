@@ -1,68 +1,58 @@
-/*make fixed*/
-HEAD
 .header {
- width: 100%;
+  width: 100%;
   height: 25%;
-position: fixed;
-padding: -1%;
+  position: fixed;
+  padding: -1%;
   float: top;
- margin-bottom: -10%;
-background-color: #f8f8ff;
-z-index: 1;
+  margin-bottom: -10%;
+  background-color: #f8f8ff;
+  z-index: 1;
 }
 
 /*GENERAL BLAH BLAH BLAH*/
 
-  .cbp-spmenu-push {
-   height: 40em;
+.cbp-spmenu-push {
+  height: 40em;
+}
+
+.sitewrap {
+  height: 40em;
+}
+
+body {
+  background-color: #f8f8ff;
+  font-family: georgia, monospace;
+  overflow-x: hidden;
+}
+
+  body::-webkit-scrollbar {
+    display: none;
   }
-
-  .sitewrap {
-   height: 40em;
-  }
-
-
-   body {
-    background-color: #f8f8ff;
-    font-family: georgia, monospace;
-    overflow-x: hidden;
-   }
-
-
-      body::-webkit-scrollbar {
-       display: none;
-       }
-
 
 /******* HEADER ******/
 
-
- header {
+header {
   float: top;
   background-color: #f8f8ff;
   height: 5em;
   padding: 1%;
   text-align: center;
- }
+}
 
- h1 {
+h1 {
   padding: 1%;
   display: inline;
   overflow: auto;
-
- }
+}
 
  /******* MAIN CONTENT STUFF ******/
 
-
-
- main {
+main {
   margin-left: 5%;
   margin-right: 5%;
- }
+}
 
-
-  section {
+section {
   background-color: #f8f8ff;
   height: 26em;
   padding: 3%;
@@ -71,74 +61,69 @@ z-index: 1;
   margin-right: 5%;
   margin-top: 0%;
   overflow: scroll;
+}
 
+  section::-webkit-scrollbar {
+  display: none;
   }
 
-    section::-webkit-scrollbar {
-    display: none;
-    }
 
-
-  article {
+article {
   padding: 1%;
   overflow: auto;
   background-color: #f8f8ff;
 
-  }
+}
 
-  .entry {
-   padding: 2%;
-   margin: 1%;
-
-   background-color: #f8f8ff;
-
-  }
+.entry {
+  padding: 2%;
+  margin: 1%;
+  background-color: #f8f8ff;
+}
 
 
 /******** STYLING FOR TEXT & LINKS  ************/
 
 
-  p {
-   padding: 3%;
-   line-height: 1.5em;
-   text-align: justify;
-   width: auto;
-  }
+p {
+  padding: 3%;
+  line-height: 1.5em;
+  text-align: justify;
+  width: auto;
+}
 
 
 /*ARTICLE TITLES*/
 
-  h2 {
+h2 {
   width: 8em;
-   background-color: #f8f8ff;
-   width: auto;
-  }
+  background-color: #f8f8ff;
+  width: auto;
+}
 
-  /*APPLICABLE TO ALL LINKS*/
+/*APPLICABLE TO ALL LINKS*/
 
- a {
+a {
   color: black;
   text-decoration: none;
- }
+}
 
-  a:visited {
-   color: black;
-   text-decoration: none;
+a:visited {
+  color: black;
+  text-decoration: none;
+}
 
-  }
-
- a:hover {
-   color: gray;
-   text-decoration: none;
-  }
+a:hover {
+  color: gray;
+  text-decoration: none;
+}
 
 /* FOOTER DIV, HOPEFULLY TO BE SOMEHOW TURNED INTO THE MENU*/
 
-
 .footer {
- background-color: #47a3da;
- padding-top: 5%;
- position: fixed;
+  background-color: #47a3da;
+  padding-top: 5%;
+  position: fixed;
 }
 
 /******** CLASSIE PLUGIN CSS  ************/
@@ -146,26 +131,25 @@ z-index: 1;
 
 
 .cbp-spmenu {
-	background: #47a3da;
-	position: fixed;
- overflow: scroll;
+  background: #47a3da;
+  position: fixed;
+  overflow: scroll;
 }
 
 .cbp-spmenu::-webkit-scrollbar {
-display: none;
+  display: none;
 }
 
 .buttonset {
-
-    height: 2em;
-    padding: 1%;
-    padding-bottom: 10%;
-    position: fixed;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    overflow: auto;
+  height: 2em;
+  padding: 1%;
+  /*padding-bottom: 10%;*/
+  position: absolute;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  overflow: auto;
 }
 
 .cbp-spmenu h3 {
@@ -207,7 +191,6 @@ display: none;
 	padding: 1em;
 }
 
-
 /* Vertical menu that slides from the left or right */
 
 .cbp-spmenu-left {
@@ -243,183 +226,157 @@ display: none;
 	transition: all 0.3s ease;
 }
 
-
-
 /* MEDIA QUERIES */
-
-
 @media screen and (max-width: 400px) {
 
-  main {
-   margin-top: 10%;
-   margin-bottom: 5%;
-   height: 70%;
-   padding-top: 3%;
-   padding-bottom: 3%;
-   margin-left: 5%;
-   margin-right: 5%;
-   width: auto;
-  }
+main {
+ margin-top: 10%;
+ margin-bottom: 5%;
+ height: 70%;
+ padding-top: 3%;
+ padding-bottom: 3%;
+ margin-left: 5%;
+ margin-right: 5%;
+ width: auto;
+}
 
-  section {
+section {
+ padding-top: 3%;
+ margin-left: 5%;
+ margin-right: 5%;
+ margin-top: 0%;
+ overflow: scroll;
+}
 
-   padding-top: 3%;
-   margin-left: 5%;
-   margin-right: 5%;
-   margin-top: 0%;
-   overflow: scroll;
-
-   }
-
-     section::-webkit-scrollbar {
-     display: none;
-     }
-
-
-  article {
-
-  }
-
-   article::-webkit-scrollbar {
+   section::-webkit-scrollbar {
    display: none;
    }
 
-
-  header {
-   width: 100%;
-   height: 25%;
-   padding: -1%;
-   float: top;
-   margin-bottom: -10%;
-   background-color: #f8f8ff;
-   z-index: 1;
-  }
-
-  h1 {
-   padding: 1%;
-   display: inline;
-   overflow: auto;
-
+  article::-webkit-scrollbar {
+  display: none;
   }
 
 
-  .footer {
-   background-color: #47a3da;
-   padding-top: 5%;
-   margin: 5%;
-   position: fixed;
-  }
+header {
+  width: 100%;
+  height: 25%;
+  padding: -1%;
+  float: top;
+  margin-bottom: -10%;
+  background-color: #f8f8ff;
+  z-index: 1;
+}
+
+h1 {
+  padding: 1%;
+  display: inline;
+  overflow: auto;
+}
+
+
+.footer {
+  background-color: #47a3da;
+  padding-top: 5%;
+  margin: 5%;
+  position: fixed;
+}
 
 }
 
 
 @media screen and (max-width: 401, min-width: 960px) {
 
- .cbp-spmenu-push {
-
+.cbp-spmenu-push {
   margin: 0%;
   overflow: scroll;
- }
+}
 
- .sitewrap {
-
+.sitewrap {
   margin: 0%;
   overflow: scroll;
- }
+}
 
- main {
-
+main {
   height: 25em;
   padding-top: 1%;
   padding-bottom: 5%;
   margin-left: 5%;
   margin-right: 5%;
   width: auto;
- }
+}
 
- section {
-
+section {
   padding-top: 3%;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 0%;
   overflow: scroll;
+}
 
+  section::-webkit-scrollbar {
+    display: none;
   }
 
-    section::-webkit-scrollbar {
-    display: none;
-    }
-
-    .footer {
-     background-color: #47a3da;
-     padding-top: 5%;
-     margin: 5%;
-     position: fixed;
-    }
+.footer {
+  background-color: #47a3da;
+  padding-top: 5%;
+  margin: 5%;
+  position: fixed;
+}
 
 }
 
 @media screen and (min-width: 961px, max-width: 1800px) {
 
-
- .cbp-spmenu-push {
+.cbp-spmenu-push {
   margin-bottom: 10%;
   margin: 0%;
   overflow: scroll;
- }
+}
 
- .sitewrap {
-
+.sitewrap {
   margin: 0%;
   overflow: scroll;
- }
+}
 
- main {
-
+main {
   height: 23em;
   padding-top: 1%;
   padding-bottom: 3%;
   margin-left: 5%;
   margin-right: 5%;
   width: auto;
- }
+}
 
- section {
-
+section {
   padding-top: 3%;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 0%;
   overflow: scroll;
+}
 
+  section::-webkit-scrollbar {
+    display: none;
   }
 
-    section::-webkit-scrollbar {
-    display: none;
-    }
-
-    .footer {
-     background-color: #47a3da;
-     padding-top: 4%;
-     margin: 5%;
-     position: fixed;
-    }
-
+.footer {
+  background-color: #47a3da;
+  padding-top: 4%;
+  margin: 5%;
+  position: fixed;
 }
 
 .buttonset {
-
-    height: 2em;
-    padding: 1%;
-    padding-bottom: 10%;
-    position: fixed;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    overflow: auto;
+  height: 2em;
+  padding: 1%;
+  padding-bottom: 10%;
+  position: fixed;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  overflow: auto;
 }
-
 
 }
