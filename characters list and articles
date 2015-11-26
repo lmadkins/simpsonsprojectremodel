@@ -1,0 +1,116 @@
+
+
+ <!-- ****** ENTRIES START HERE ****** -->
+  <article>
+    <div id="article3"></div>
+     <h2>Hank Scorpio</h2>
+     <p>
+     <img src="img/hankscorpio.jpg" width="50" height="50">
+      <div class="entry">
+       <br>
+       Hank Scorpio is an evil genius and owner of Globex Corporation.
+       <br>
+       Scorpio, despite being an evil genius, proved to be an ideal boss, welcoming the Simpson family with a beautiful home and a friendly, relaxed, non-authoritative employer attitude. However, being an evil genius is still his priority, and over the episode he delivers a video threat to the United Nations, in which he destroys the Queensboro Bridge with a giant satellite laser device, but is annoyed that some of them seemed to think the bridge collapsed on its own.
+       <br> Unlike many supervillains, Scorpio does care for the employees who live in his company town, Cypress Creek, even going so far offering his employees health and free dental care, along with regularly scheduled fun runs.
+       <br>When Homer comes to Scorpio and tells him that he wants to take his family back to Springfield, a battle between Globex and the U.S government is taking place, and Homer sympathizes with him having problems with the government. Though Scorpio says he would like to have Homer stay, he told Homer to do what he felt he should do, and tells Homer he would do him a favor if he were to kill some people before grabbing a flamethrower and killing several soldiers while laughing sadistically, as seen above.
+      </p>
+
+     </div>
+  </article>
+
+  <article>
+    <div id="article2"></div>
+     <h2>Shary Bobbins</h2>
+     <p>
+     <img src="img/sharybobbins.jpg" width="50" height="50">
+     <div class="entry">
+     <br>
+     Shary Bobbins was briefly employed as a nanny for the Simpsons children, in a spoof episode of Mary Poppins.
+     <br>
+     Shary Bobbins proves to be a big help for the Simpson family. However once Shary Bobbins soon declares her work finished and leaves the house.
+     <br>Just as she is starting to miss the Simpson family, she sees Homer throttling Bart; the family seems to have instantly reverted to its previous state of dysfunction. She realizes that her work is far from complete and decides to stay. The family now starts to treat her rudely and lose interest in her songs and zest for life. Declaring that the Simpsons would be the death of her, she becomes depressed and starts drinking (and singing "Margaritaville") with Barney.
+     <br>
+     The family realizes that they have crushed her spirit and decide to cheer her up. Marge tells Shary that nothing can be done to change the Simpsons and they are happy just the way they are.
+     <br>
+     Shary declares that the Simpsons are a bunch of apes and takes off with her magical umbrella. As Shary glides away, Lisa asks whether they will see her again and Homer is positive that they will. As he says these words, Shary is killed by being sucked into an airplane turbine.
+      </p>
+
+    </div>
+  </article>
+
+  <article>
+    <div id="article1"></div>
+      <h2>Frank Grimes</h2>
+      <p>
+      <img src="img/frankgrimes.jpg" width="50" height="50">
+      <div class="entry">
+
+       <br>
+       "Frank" Grimes was an employee of the Springfield Nuclear Power Plant and the self-declared enemy of Homer Simpson. <br>
+       Grimes was abandoned by his family at the tender age of four, and thus "never got to go to school." He spent the remainder of his childhood working as a delivery boy, delivering gifts to children from wealthy, loving families. On his eighteenth birthday, Grimes was severely injured in a silo explosion, and his recovery was long and painful.
+       <br>His long years of toil and suffering appear to have left him bitter and resentful, and after becoming employed at the Nuclear Power Plant, he rapidly came to despise Homer.
+       <br>Eventually he snapped, and during his psychotic breakdown during which he impersonated Homer's stupid behavior, he died of electrocution from touching high-voltage power cables.
+      </p>
+   </div>
+  </article>
+
+
+
+  <li class="nav-item"><a href="#article1">Abbie</a></li>
+  <li class="nav-item"><a href="#article2">Arthur Fortune</a></li>
+  <li class="nav-item"><a href="#article3">Bort</a></li>
+  <li class="nav-item"><a href="#article4">Brenda</a></li>
+  <li class="nav-item"><a href="#article5">Brother Faith</a></li>
+  <li class="nav-item"><a href="#article6">Bruno Dunridge</a></li>
+  <li class="nav-item"><a href="#article7">Canadian Flanders</a></li>
+  <li class="nav-item"><a href="#article8">Canary M. Burns</a></li>
+  <li class="nav-item"><a href="#article10">Captain Tenille</a></li>
+  <li class="nav-item"><a href="#article11">Cookie</a></li>
+  <li class="nav-item"><a href="#article12">Cornelius Chapman</a></li>
+  <li class="nav-item"><a href="#article13">Dr. Bob Kaufam</a></li>
+  <li class="nav-item"><a href="#article14">Dr. Wolfe</a></li>
+  <li class="nav-item"><a href="#article15">Edwina</a></li>
+  <li class="nav-item"><a href="#article16">Father Sean</a></li>
+  <li class="nav-item"><a href="#article17">Frank Grimes</a></li>
+  <li class="nav-item"><a href="#article18">Frank Grimes Jr.</a></li>
+  <li class="nav-item"><a href="#article19">Furious George</a></li>
+  <li class="nav-item"><a href="#article20">Gabriel</a></li>
+  <li class="nav-item"><a href="#article21">Gravedigger Billy</a></li>
+  <li class="nav-item"><a href="#article22">Groundskeeper Seamus</a></li>
+  <li class="nav-item"><a href="#article23">Guy Incognito</a></li>
+  <li class="nav-item"><a href="#article24">Gypsy</a></li>
+  <li class="nav-item"><a href="#article25">Hank Scorpio</a></li>
+  <li class="nav-item"><a href="#article26">Hugh Jass</a></li>
+  <li class="nav-item"><a href="#article27">Jesse Grass</a></li>
+  <li class="nav-item"><a href="#article28">Jonathan Frink Sr.</a></li>
+  <li class="nav-item"><a href="#article29">Kwik-E-Mart President</a></li>
+  <li class="nav-item"><a href="#article30">Lyle Lanley</a></li>
+  <li class="nav-item"><a href="#article31">Madam Wu</a></li>
+  <li class="nav-item"><a href="#article32">Mojo</a></li>
+  <li class="nav-item"><a href="#article33">Mr Bergstrom</a></li>
+  <li class="nav-item"><a href="#article34">Mrs. Dexter</a></li>
+  <li class="nav-item"><a href="#article35">Myrna Bellamy</a></li>
+  <li class="nav-item"><a href="#article36">Norbert Van Houten</a></li>
+  <li class="nav-item"><a href="#article37">Number One</a></li>
+  <li class="nav-item"><a href="#article38">Officer Krackney</a></li>
+  <li class="nav-item"><a href="#article39">Otm Shank</a></li>
+  <li class="nav-item"><a href="#article40">Pepi</a></li>
+  <li class="nav-item"><a href="#article41">Pinchy</a></li>
+  <li class="nav-item"><a href="#article42">Radioactive Ape</a></li>
+  <li class="nav-item"><a href="#article43">Ray Magini</a></li>
+  <li class="nav-item"><a href="#article44">Red Barclay</a></li>
+  <li class="nav-item"><a href="#article45">Repair Man</a></li>
+  <li class="nav-item"><a href="#article46">Rex Banner</a></li>
+  <li class="nav-item"><a href="#article47">Roy</a></li>
+  <li class="nav-item"><a href="#article48">Screamapillar</a></li>
+  <li class="nav-item"><a href="#article49">Senor Ding Dong</a></li>
+  <li class="nav-item"><a href="#article50">Shary Bobbins</a></li>
+  <li class="nav-item"><a href="#article51">Southern Sheriff</a></li>
+  <li class="nav-item"><a href="#article52">Tab Spangler</a></li>
+  <li class="nav-item"><a href="#article53">The Happiest Man in Springfield</a></li>
+  <li class="nav-item"><a href="#article54">The Homer Imposter</a></li>
+  <li class="nav-item"><a href="#article55">The Moe Imposter</a></li>
+  <li class="nav-item"><a href="#article56">The Southern COlonel</a></li>
+  <li class="nav-item"><a href="#article57">Tom</a></li>
+  <li class="nav-item"><a href="#article58">Veronica</a></li>
+  <li class="nav-item"><a href="#article59">Yuwa</a></li>

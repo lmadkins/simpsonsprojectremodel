@@ -1,361 +1,215 @@
-/*make fixed*/
-HEAD
-.header {
- width: 100%;
-  height: 25%;
-position: fixed;
-padding: -1%;
-  float: top;
- margin-bottom: -10%;
-background-color: #f8f8ff;
-z-index: 1;
+/* Navigation Menu - Background */
+.navigation {
+  /* critical sizing and position styles */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+	overflow: scroll;
+  /* non-critical appearance styles */
+  list-style: none;
+  background: #111;
 }
 
-/*GENERAL BLAH BLAH BLAH*/
+/* Navigation Menu - List items */
+.nav-item {
+  /* non-critical appearance styles */
+  width: 200px;
+	padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 1em;
+  line-height: 1.75;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #000;
+}
 
-  .cbp-spmenu-push {
-   height: 40em;
-  }
+.nav-item a {
+  /* non-critical appearance styles */
+  display: block;
+  /*padding: 1em;*/
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
 
-  .sitewrap {
-   height: 40em;
-  }
-
-
-   body {
-    background-color: #f8f8ff;
-    font-family: georgia, monospace;
-    overflow-x: hidden;
-   }
-
-
-      body::-webkit-scrollbar {
-       display: none;
-       }
+.nav-item a:hover {
+  color: #c74438;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+}
 
 
-/******* HEADER ******/
+/* Nav Trigger */
+.nav-trigger {
+  /* critical styles - hide the checkbox input */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  /* critical positioning styles */
+  position: fixed;
+  left: 15px; top: 10px;
+  z-index: 2;
+
+  /* non-critical apperance styles */
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+	/*border: 2px solid red;*/
+}
+
+/* Make the Magic Happen */
+.nav-trigger + label, .site-wrap {
+  transition: left 0.2s;
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+/* End of Off-Canvas-Nav related Styles  */
+
+body {
+	/* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+	font-size: 1em;
+}
+
+	body::-webkit-scrollbar {
+		display: none;
+	}
 
 
- header {
-  float: top;
-  background-color: #f8f8ff;
-  height: 5em;
-  padding: 1%;
-  text-align: center;
- }
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+  /* Critical position and size styles */
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white; /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  /* non-critical apperance styles */
+  /*padding: 1em;*/
+  /*background-image: linear-gradient(135deg, rgb(254,255,255) 0%,rgb(221,241,249) 35%,rgb(160,216,239) 100%);*/
+  background-size: 200%;
+}
 
- h1 {
-  padding: 1%;
-  display: inline;
+
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  /* You can set flex-wrap and flex-direction individually */
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* Or do it all in one line with flex flow */
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /* tweak the where items line up on the row */
+  /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+}
+
+#header {
+  /*list-style: none;
+  /*margin: 0;
+  /*width: 40em;*/
+  background-color: #999;
+  display: block;
+  flex: 1 100%;
+}
+
+#header li {
+  padding: 0.5em;
+  color: lightgray;
+}
+
+h2 {
+}
+
+article {
+  margin: 2%;
+  padding: 2%;
+  width: 20em;
+  height: 25em;
   overflow: auto;
-
- }
-
- /******* MAIN CONTENT STUFF ******/
-
-
-
- main {
-  margin-left: 5%;
-  margin-right: 5%;
- }
-
-
-  section {
   background-color: #f8f8ff;
-  height: 26em;
+	/*border: 2px solid pink;*/
+  /*-webkit-align-self: flex-start;
+  align-self: flex-start;*/
+}
+
+	article::-webkit-scrollbar {
+		display: none;
+	}
+
+.entry {
+  /*padding: 2%;*/
+  margin: 1%;
+  background-color: #f8f8ff;
+	/*border: 2px solid orange;*/
+}
+
+	.entry::-webkit-scrollbar {
+		display: none;
+	}
+
+
+h1, h3, p {
+  max-width: 600px;
+  margin: 0 auto 1em;
+}
+
+p {
   padding: 3%;
-  padding-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 0%;
-  overflow: scroll;
-
-  }
-
-    section::-webkit-scrollbar {
-    display: none;
-    }
-
-
-  article {
-  padding: 1%;
-  overflow: auto;
-  background-color: #f8f8ff;
-
-  }
-
-  .entry {
-   padding: 2%;
-   margin: 1%;
-
-   background-color: #f8f8ff;
-
-  }
-
-
-/******** STYLING FOR TEXT & LINKS  ************/
-
-
-  p {
-   padding: 3%;
-   line-height: 1.5em;
-   text-align: justify;
-   width: auto;
-  }
-
+  line-height: 1.5em;
+  text-align: justify;
+  width: auto;
+}
 
 /*ARTICLE TITLES*/
 
-  h2 {
-  width: 8em;
-   background-color: #f8f8ff;
-   width: auto;
-  }
-
-  /*APPLICABLE TO ALL LINKS*/
-
- a {
-  color: black;
-  text-decoration: none;
- }
-
-  a:visited {
-   color: black;
-   text-decoration: none;
-
-  }
-
- a:hover {
-   color: gray;
-   text-decoration: none;
-  }
-
-/* FOOTER DIV, HOPEFULLY TO BE SOMEHOW TURNED INTO THE MENU*/
-
-
-.footer {
- background-color: #47a3da;
- padding-top: 5%;
- position: fixed;
+h2 {
+  /*width: 8em;*/
+  background-color: #f8f8ff;
+  /*width: auto;*/
+	text-align: center;
+	font-size: 30px;
+	/*border: 3px solid lightblue;*/
 }
 
-/******** CLASSIE PLUGIN CSS  ************/
-/* General styles for all menus */
-
-
-.cbp-spmenu {
-	background: #47a3da;
-	position: fixed;
- overflow: scroll;
+img {
+  margin-top: 2%;
+  margin-left: 30%;
+	/*border: 3px solid blue;*/
 }
+/**/
 
-.cbp-spmenu::-webkit-scrollbar {
-display: none;
-}
+/*
+code {
+	padding: 2px;
+	background: #ddd;
+}*/
 
-.buttonset {
-
-    height: 2em;
-    padding: 1%;
-    padding-bottom: 10%;
-    position: fixed;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    overflow: auto;
-}
-
-.cbp-spmenu h3 {
-	color: #afdefa;
-	font-size: 1.9em;
-	padding: 20px;
-	margin: 0;
-	font-weight: 300;
-	background: #0d77b6;
-}
-
-.cbp-spmenu a {
-	display: block;
-	color: #fff;
-	font-size: 1.1em;
-	font-weight: 300;
-}
-
-.cbp-spmenu a:hover {
-	background: #258ecd;
-}
-
-.cbp-spmenu a:active {
-	background: #afdefa;
-	color: #47a3da;
-}
-
-/* Orientation-dependent styles for the content of the menu */
-
-.cbp-spmenu-vertical {
-	width: 240px;
-	height: 100%;
-	top: 0;
-	z-index: 1000;
-}
-
-.cbp-spmenu-vertical a {
-	border-bottom: 1px solid #258ecd;
-	padding: 1em;
-}
-
-
-/* Vertical menu that slides from the left or right */
-
-.cbp-spmenu-left {
-	left: -240px;
-}
-
-.cbp-spmenu-left.cbp-spmenu-open {
-	left: 0px;
-}
-
-/* Push classes applied to the body */
-
-.cbp-spmenu-push {
-	overflow-x: hidden;
-	position: relative;
-	left: 0;
-}
-
-.cbp-spmenu-push-toright {
-	left: 240px;
-}
-
-.cbp-spmenu-push-toleft {
-	left: -240px;
-}
-
-/* Transitions */
-
-.cbp-spmenu,
-.cbp-spmenu-push {
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-}
-
-
-
-/* MEDIA QUERIES */
-
-
-@media screen and (max-width: 400px) {
-
-  main {
-   margin-top: 10%;
-   margin-bottom: 5%;
-   height: 70%;
-   padding-top: 3%;
-   padding-bottom: 3%;
-   margin-left: 5%;
-   margin-right: 5%;
-   width: auto;
-  }
-
-  section {
-
-   padding-top: 3%;
-   margin-left: 5%;
-   margin-right: 5%;
-   margin-top: 0%;
-   overflow: scroll;
-
-   }
-
-     section::-webkit-scrollbar {
-     display: none;
-     }
-
-
-  article {
-
-  }
-
-   article::-webkit-scrollbar {
-   display: none;
-   }
-
-
-  header {
-   width: 100%;
-   height: 25%;
-   padding: -1%;
-   float: top;
-   margin-bottom: -10%;
-   background-color: #f8f8ff;
-   z-index: 1;
-  }
-
-  h1 {
-   padding: 1%;
-   display: inline;
-   overflow: auto;
-
-  }
-
-
-  .footer {
-   background-color: #47a3da;
-   padding-top: 5%;
-   margin: 5%;
-   position: fixed;
-  }
-
-}
-
-
-@media screen and (max-width: 401, min-width: 950px) {
-
- .cbp-spmenu-push {
-
-  margin: 0%;
-  overflow: scroll;
- }
-
- .sitewrap {
-
-  margin: 0%;
-  overflow: scroll;
- }
-
- main {
-
-  height: 25em;
-  padding-top: 1%;
-  padding-bottom: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  width: auto;
- }
-
- section {
-
-  padding-top: 3%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 0%;
-  overflow: scroll;
-
-  }
-
-    section::-webkit-scrollbar {
-    display: none;
-    }
-
-    .footer {
-     background-color: #47a3da;
-     padding-top: 5%;
-     margin: 5%;
-     position: fixed;
-    }
-
-}
+/* Micro reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
