@@ -232,6 +232,11 @@ html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-seri
     width: 10.9375em;
     height: 8em;
   }
+
+  .entry {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }
 
   /*(320px and up )*/
@@ -250,6 +255,12 @@ html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-seri
     margin-right: 10%;
     width: 14.0625em;
     height: 10.3125em;
+  }
+
+
+  .entry {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
@@ -293,6 +304,11 @@ html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-seri
     height: 11.4375em;
   }
 
+  .entry {
+    margin-left: 6%;
+    margin-right: 4%;
+  }
+
 }
 
   /*(720px and up )*/
@@ -312,6 +328,11 @@ html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-seri
     width: 17.1875em;
     height: 12.625em;
   }
+
+  .entry {
+    margin-left: 1%;
+    margin-right: 1%;
+  }
 }
 
   /*(900px and up )*/
@@ -323,13 +344,18 @@ html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-seri
 @media (min-width: 64em) {
   site-wrap {
   }
-  
+
   /*300 x 220px*/
   img {
     margin-left: 1%;
     margin-right: 1%;
     width: 18.75em;
     height: 13.75em;
+  }
+
+  .entry {
+    margin-left: 1%;
+    margin-right: 1%;
   }
 }
 
@@ -363,6 +389,11 @@ html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-seri
     margin-right: 1%;
     width: 18.75em;
     height: 13.75em;
+  }
+
+  .entry {
+    margin-left: 1%;
+    margin-right: 1%;
   }
 }
 
