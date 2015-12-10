@@ -29,7 +29,146 @@ body {
     display: none;
   }
 
-/******* HEADER ******/
+body {
+	/* Without this, the body has excess horizontal scroll when the menu is open */
+  /*overflow-x: hidden;*/
+	font-size: 1em;
+}
+
+	body::-webkit-scrollbar { display: none; }
+
+.flexcontainer {
+  background-color: #fffffd;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  /* You can set flex-wrap and flex-direction individually */
+  /*-webkit-flex-direction: row;
+  flex-direction: row;*/
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* Or do it all in one line with flex flow */
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /* tweak the where items line up on the row */
+  /* valid values are: flex-start, flex-end, space-between, space-around, stretch */
+  flex-basis: 70%;
+  overflow: scroll;
+}
+
+/*------Character Index Modal------*/
+/*http://foundation.zurb.com/sites/docs/reveal.html*/
+
+#menuToggle img {
+	position: fixed;
+	opacity: 0.5;
+	border-radius: 3px;
+	margin: inherit;
+	margin-top: 1rem;
+	padding: none;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+	#menuToggle img:hover { opacity: 0.9; }
+
+	/*------ menuToggle media queries----- */
+
+	@media (min-width: 20em) {
+	/*320px (320px ~ 16px = 20em)*/
+		#menuToggle img {
+			width: 35px;
+			height: 35px;
+			top: 90%;
+			right: 9px;
+		}
+	}
+
+	@media (min-width: 25em) {
+	/*400px (400px ~ 16px = 25em)*/
+		#menuToggle img {
+			width: 35px;
+			height: 35px;
+			top: 1em;
+			right: 9px;
+		}
+	}
+
+	@media (min-width: 27.8125em) {
+	/*445px (475px ~ 16px = 27.8125em)*/
+		#menuToggle img {
+			width: 40px;
+			height: 40px;
+			top: 1em;
+			right: 1.2em;
+		}
+	}
+
+	@media (min-width: 40em) {
+	/*640px (740px ~16px = 40em)*/
+		#menuToggle img {
+			width: 40px;
+			height: 40px;
+			top: 20px;
+			right: .2em;
+		}
+	}
+
+	@media (min-width: 45em) {
+	/*720px (720px ~16px = 48.75em)*/
+		#menuToggle img {
+			width: 40px;
+			height: 40px;
+			top: 20px;
+			right: 1em;
+		}
+	}
+
+	@media (min-width: 54.375em) {
+	/*870px (870px ~ 16px = 54.375em)*/
+		#menuToggle img {
+			width: 40px;
+			height: 40px;
+			top: 20px;
+			right: 20px;
+		}
+	}
+
+  @media (min-width: 68.125em) {
+	/*1090px (1090px ~ 16px = 68.125em)*/
+		#menuToggle img {
+			width: 35px;
+			height: 35px;
+			top: 20px;
+			right: 0.4em;
+		}
+	}
+
+	@media (min-width: 78.125em) {
+	/*1250px (1250px ~ 16px = 78.125em)*/
+		#menuToggle img {
+			width: 40px;
+			height: 40px;
+			top: 20px;
+			right: 1em;
+		}
+	}
+
+	/*------- fin. -------*/
+
+#navModal {
+  background-image: linear-gradient(#fff, #f7f7f7);
+	padding: 5%;
+	padding-top: 4%;
+  border-radius: 4px;
+	border-color: #ddd;
+  opacity:  0.95;
+  transition: all .3s;
+}
+
+	#navModal::-webkit-scrollbar { display: none; }
 
 header {
   float: top;
@@ -45,7 +184,29 @@ h1 {
   overflow: auto;
 }
 
- /******* MAIN CONTENT STUFF ******/
+#navigation {
+  list-style: none;
+	text-align: center;
+}
+
+.nav-item {
+  opacity: 1;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.nav-item a {
+  cursor: pointer;
+	/*font-variant: small-caps;*/
+	color: #111;
+	line-height: 2;
+	font-size: 1.2em;
+}
+
+	.nav-item a:hover { color: #444;}
+
+
+	.nav-item a:active { color: #000; }
+
 
 main {
   margin-left: 5%;
@@ -82,6 +243,108 @@ article {
 }
 
 
+
+.close-button {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-left: 50%;
+	padding-top: 5%;
+	margin-bottom: 1%;
+}
+
+	.close-button:hover { color: #444; }
+
+	.close-button:focus {
+		color: #444;
+	 	border: none;
+	}
+/*------- HEADER STYLES --------*/
+
+/*#header {
+  border: 1px solid #f5f5f5;
+  overflow: visible;
+	margin-top: 1em;
+	margin-left: 30%;
+	margin-right: 30%;
+	display: block;
+	flex: 1 100%;
+	text-align: center;
+	border-radius: 3px;
+	width: 50px;
+	height: 50px;
+}*/
+
+
+  /*-----Header Media Queries------*/
+  @media (min-width: 20em) {
+  /*320px (320px ~ 16px = 20em)*/
+    #header {
+      width: 20em;
+    }
+  }
+
+  @media (min-width: 25em) {
+  /*400px (400px ~ 16px = 25em)*/
+    #header {
+      width: 25em;
+    }
+  }
+
+  @media (min-width: 36.25em) {
+  /*580px (580px ~ 16px = 36.25em)*/
+    #header {
+      width: 25em;
+    }
+  }
+
+  @media (min-width: 40em) {
+    /*640px (740px ~16px = 40em)*/
+    #header {
+      width: 30em;
+    }
+  }
+
+  @media (min-width: 64em) {
+  /*1024px (1024px ~ 16px = 64em)*/
+    #header {
+      width: 40em;
+    }
+	}
+  /*------- fin. -------*/
+
+/*--------ARTICLE STYLES----------*/
+
+article {
+  margin: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  height:auto !important;
+  height: 35em;
+  border: 1px solid #f5f5f5;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+	article::-webkit-scrollbar { display: none; }
+
+  /*--------Article Media Queries--------*/
+	@media (min-width: 20em) {
+	/*320px (320px ~ 16px = 20em)*/
+    article {
+      width: 14.0625em;
+    }
+  }
+
+
+  @media (min-width: 25em) {
+	/*400px (400px ~ 16px = 25em)*/
+    article {
+      width: 18.75em;
+    }
+  }
+
+
 /******** STYLING FOR TEXT & LINKS  ************/
 
 
@@ -92,8 +355,29 @@ p {
   width: auto;
 }
 
+  @media (min-width: 30.3125em) {
+	/*485px (485px ~ 16px = 30.3125em)*/
+    article {
+      width: 25em;
+    }
+  }
 
-/*ARTICLE TITLES*/
+
+  @media (min-width: 36.25em) {
+	/*580px (580px ~ 16 = 36.25em)*/
+    article {
+      width: 25em;
+    }
+  }
+
+  @media (min-width: 40em) {
+	/*640px (740px ~16px = 40em)*/
+    article {
+      width: 18em;
+			min-height: 43.75em;
+    }
+  }
+
 
 h2 {
   width: 8em;
@@ -126,8 +410,113 @@ a:hover {
   position: fixed;
 }
 
-/******** CLASSIE PLUGIN CSS  ************/
-/* General styles for all menus */
+  @media (min-width: 54.375em) {
+	/*870px (870px ~ 16px = 54.375em)*/
+    article {
+      width: 20em;
+			min-height: 43.75em;
+    }
+  }
+  /*------- fin. -------*/
+
+.name {
+  padding-top: 5%;
+  margin: 1%;
+	text-align: center;
+  font-size: 1.2em;
+	letter-spacing: 1.3px;
+}
+
+  @media (min-width: 25em) {
+	/*400px (400px ~ 16px = 25em)*/
+    .name {
+      font-size: 1.5rem;
+    }
+  }
+
+img {
+  margin-top: 2%;
+  border-radius: 3px;
+}
+
+/*-------Image Media Queries-------*/
+  @media (min-width: 20em) {
+  /*320px (320px ~ 16px = 20em)*/
+    img {
+	  /*175 x 128*/
+      margin-left: 20%;
+      margin-right: 20%;
+      width: 10.9375em;
+      height: 8em;
+    }
+  }
+
+  @media (min-width: 25em) {
+  /*400px (400px ~ 16px = 25em)*/
+    img {
+		/*250 x 183*/
+      margin-left: 5%;
+      margin-right: 2%;
+      width: 15.625em;
+      height: 11.4375em;
+    }
+  }
+
+  @media (min-width: 30.3125em) {
+	/*485px (485px ~ 16px = 30.3125em)*/
+    img {
+      margin-left: 12%;
+      margin-right: 10%;
+      width: 17.1875em;
+      height: 12.625em;
+    }
+  }
+
+	@media (min-width: 36.25em) {
+	/*580px (580px ~ 16px = 36.25em)*/
+		img {
+		/*275 x 202*/
+			margin-left: 12%;
+			margin-right: 10%;
+			width: 17.1875em;
+			height: 12.625em;
+		}
+	}
+
+
+  @media (min-width: 40em) {
+	/*640px (740px ~16px = 40em)*/
+    img {
+		/*250 x 183*/
+      margin-left: 1%;
+      margin-right: 2%;
+      width: 15.625em;
+      height: 11.4375em;
+    }
+  }
+
+
+  @media (min-width: 54.375em) {
+  /*870px (870px ~ 16px = 54.375em)*/
+    img {
+		/*275 x 202*/
+      margin-left: 1%;
+      margin-right: 1%;
+      width: 17.1875em;
+      height: 12.625em;
+    }
+  }
+
+  @media (min-width: 64em) {
+	/*1024px (1024px ~ 16px = 64em)*/
+    img {
+		/*300 x 220*/
+      margin-left: 1%;
+      margin-right: 1%;
+      width: 18.75em;
+      height: 13.75em;
+    }
+  }
 
 
 .cbp-spmenu {
@@ -152,79 +541,154 @@ a:hover {
   overflow: auto;
 }
 
-.cbp-spmenu h3 {
-	color: #afdefa;
-	font-size: 1.9em;
-	padding: 20px;
-	margin: 0;
-	font-weight: 300;
-	background: #0d77b6;
+	@media (min-width: 78.125em) {
+	/*1250px (1250px ~ 16px = 78.125em)*/
+		img {
+			margin-left: 1%;
+      margin-right: 1%;
+      width: 18.75em;
+      height: 13.75em;
+		}
+	}
+
+  /*------- fin. -------*/
+
+.entry {
+  /*margin: 0px;*/
+  padding-top: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #fff;
 }
 
-.cbp-spmenu a {
-	display: block;
-	color: #fff;
-	font-size: 1.1em;
-	font-weight: 300;
+	.entry::-webkit-scrollbar { display: none; }
+
+  /*-------Entry Media Queries-------*/
+  /*320px (320px ~ 16px = 20)*/
+  @media (min-width: 20em) {
+    .entry {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }
+
+
+  /*400px (400px ~ 16px = 25em)*/
+  @media (min-width: 25em) {
+    .entry {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+
+  /*485px (485px ~ 16px = 30.3125em)*/
+  @media (min-width: 30.3125em) {
+    .entry {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+
+  /*640px (740px ~16px = 40em)*/
+  @media (min-width: 40em) {
+    .entry {
+      margin-left: 4%;
+      margin-right: 4%;
+    }
+  }
+
+  /*870px (870px ~ 16px = 54.375em)*/
+  @media (min-width: 54.375em) {
+    .entry {
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+  }
+
+  /*------- fin. -------*/
+
+.episode {
+  margin-top: 5%;
+  margin-bottom: 3%;
+	text-align: center;
+	font-style: italic;
+	letter-spacing: 1.1px;
 }
 
-.cbp-spmenu a:hover {
-	background: #258ecd;
+h1, h3, p {
+  max-width: 600px;
+  margin: 0 auto 1em;
 }
 
-.cbp-spmenu a:active {
-	background: #afdefa;
-	color: #47a3da;
-}
-
-/* Orientation-dependent styles for the content of the menu */
-
-.cbp-spmenu-vertical {
-	width: 240px;
-	height: 100%;
-	top: 0;
-	z-index: 1000;
-}
-
-.cbp-spmenu-vertical a {
-	border-bottom: 1px solid #258ecd;
-	padding: 1em;
-}
 
 /* Vertical menu that slides from the left or right */
 
 .cbp-spmenu-left {
 	left: -240px;
+
+p {
+  padding: 3%;
+  line-height: 1.5em;
+  text-align: justify;
+  width: auto;
+
 }
 
-.cbp-spmenu-left.cbp-spmenu-open {
-	left: 0px;
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
 }
 
-/* Push classes applied to the body */
-
-.cbp-spmenu-push {
-	overflow-x: hidden;
-	position: relative;
-	left: 0;
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
 }
 
-.cbp-spmenu-push-toright {
-	left: 240px;
+.cd-container {
+  width: 90%;
+  max-width: 768px;
+  margin: 2em auto;
 }
 
-.cbp-spmenu-push-toleft {
-	left: -240px;
+	.cd-container::after {
+	  /* clearfix */
+	  content: '';
+	  display: table;
+	  clear: both;
+	}
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: url(img/arrow201.png) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 1;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+	.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+	  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+	  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+	  transition: opacity .3s 0s, visibility 0s 0s;
+	}
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
 }
 
-/* Transitions */
-
-.cbp-spmenu,
-.cbp-spmenu-push {
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 400px) {
@@ -380,3 +844,98 @@ section {
 }
 
 }
+
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .7;
+}
+
+	.no-touch .cd-top:hover {
+	  /*background-color: #e86256;*/
+	  opacity: 1;
+	}
+
+/*--'To Top' media queries--*/
+
+	@media (min-width: 20em) {
+	/*320px (320px ~ 16px = 20em)*/
+		.cd-top {
+			height: 40px;
+			width: 40px;
+			bottom: 1em;
+			right: 9px;
+		}
+	}
+
+	@media (min-width: 25em) {
+	/*400px (400px ~ 16px = 25em)*/
+		.cd-top {
+			height: 40px;
+			width: 40px;
+			bottom: 1em;
+			right: 9px;
+		}
+	}
+
+	@media (min-width: 27.8125em) {
+	/*445px (475px ~ 16px = 27.8125em)*/
+		.cd-top {
+			height: 40px;
+			width: 40px;
+			bottom: 2em;
+			right: 1.2em;
+		}
+	}
+
+	@media (min-width: 40em) {
+	/*640px (640px ~16px = 40em)*/
+		.cd-top {
+			right: 20px;
+			bottom: 20px;
+		}
+	}
+
+	@media (min-width: 54.375em) {
+	/*870px (870px ~ 16px = 54.375em)*/
+		.cd-top {
+			right: 20px;
+			bottom: 20px;
+		}
+	}
+
+	@media (min-width: 64em) {
+	/*1024px (1024px ~ 16px = 64em)*/
+		.cd-top {
+	    height: 60px;
+	    width: 60px;
+			bottom: 30px;
+	    right: 30px;
+	  }
+	}
+
+  @media (min-width: 68.125em) {
+	/*1090px (1090px ~ 16px = 68.125em)*/
+		.cd-top {
+			height: 60px;
+			width: 60px;
+			bottom: 30px;
+			right: 0.3em;
+		}
+	}
+
+	@media (min-width: 78.125em) {
+	/*1250px (1250px ~ 16px = 78.125em)*/
+		.cd-top {
+			height: 60px;
+			width: 60px;
+			bottom: 30px;
+			right: 1em;
+		}
+	}
+
+	/*------- fin. -------*/
+
+
+/* Micro reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }

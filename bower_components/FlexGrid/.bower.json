@@ -1,0 +1,55 @@
+{
+  "name": "FlexGrid",
+  "description": "Create clean, simple and powerful multi-device, responsive, mobile first grid layouts via Flexible Boxes. Short, intuitive solid structure with flexible options system, mixin generators to match any of your needs.",
+  "keywords": [
+    "Grid",
+    "Flex",
+    "Flexbox",
+    "Flex grid",
+    "Responsive",
+    "Mobile first"
+  ],
+  "homepage": "http://godban.com.ua/projects/flexgrid",
+  "version": "0.2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/godban/flexgrid.git"
+  },
+  "main": "dist/css/flexgrid.min.css",
+  "license": "MIT",
+  "author": {
+    "name": "Bogdan Plieshka",
+    "email": "bogdanplieshka@gmail.com",
+    "homepage": "http://johndoe.com"
+  },
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "demo",
+    "src",
+    "dist/flexgrid.zip",
+    ".editorconfig",
+    ".gitattributes",
+    ".gitignore",
+    ".jscsrc",
+    ".jshintrc",
+    "favicon.ico",
+    "Gruntfile.js",
+    "index.html",
+    "package.json"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "normalize.css": "~3.0.3"
+  },
+  "_release": "0.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.0",
+    "commit": "c18a138ad46862baf2b2f6ecfa73948bf8d743aa"
+  },
+  "_source": "git://github.com/godban/flexgrid.git",
+  "_target": "~0.2.0",
+  "_originalSource": "flexgrid",
+  "_direct": true
+}
