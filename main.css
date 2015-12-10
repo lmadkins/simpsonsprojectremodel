@@ -1,4 +1,6 @@
 body {
+	/* Without this, the body has excess horizontal scroll when the menu is open */
+  /*overflow-x: hidden;*/
 	font-size: 1em;
 }
 
@@ -137,10 +139,10 @@ body {
 
 	#navModal::-webkit-scrollbar { display: none; }
 
+
 #navigation {
   list-style: none;
 	text-align: center;
-	overflow:scroll;
 }
 
 .nav-item {
@@ -158,43 +160,7 @@ body {
 
 	.nav-item a:hover { color: #444;}
 
-
 	.nav-item a:active { color: #000; }
-
-
-main {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-section {
-  background-color: #f8f8ff;
-  height: 26em;
-  padding: 3%;
-  padding-top: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 0%;
-  overflow: scroll;
-}
-
-  section::-webkit-scrollbar {
-  display: none;
-  }
-
-
-article {
-  padding: 1%;
-  overflow: auto;
-  background-color: #f8f8ff;
-
-}
-
-.entry {
-  padding: 2%;
-  margin: 1%;
-  background-color: #f8f8ff;
-}
 
 
 
@@ -290,7 +256,6 @@ article {
     }
   }
 
-
   @media (min-width: 25em) {
 	/*400px (400px ~ 16px = 25em)*/
     article {
@@ -298,24 +263,12 @@ article {
     }
   }
 
-
-/******** STYLING FOR TEXT & LINKS  ************/
-
-
-p {
-  padding: 3%;
-  line-height: 1.5em;
-  text-align: justify;
-  width: auto;
-}
-
   @media (min-width: 30.3125em) {
 	/*485px (485px ~ 16px = 30.3125em)*/
     article {
       width: 25em;
     }
   }
-
 
   @media (min-width: 36.25em) {
 	/*580px (580px ~ 16 = 36.25em)*/
@@ -417,7 +370,6 @@ img {
     }
   }
 
-
   @media (min-width: 54.375em) {
   /*870px (870px ~ 16px = 54.375em)*/
     img {
@@ -471,7 +423,6 @@ img {
     }
   }
 
-
   /*400px (400px ~ 16px = 25em)*/
   @media (min-width: 25em) {
     .entry {
@@ -519,18 +470,11 @@ h1, h3, p {
   margin: 0 auto 1em;
 }
 
-
-/* Vertical menu that slides from the left or right */
-
-.cbp-spmenu-left {
-	left: -240px;
-
 p {
   padding: 3%;
   line-height: 1.5em;
   text-align: justify;
   width: auto;
-
 }
 
 .cd-top.cd-is-visible {
