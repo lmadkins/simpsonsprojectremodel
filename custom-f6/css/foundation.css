@@ -1488,8 +1488,8 @@ kbd {
       max-width: 62.5remrem; } }
   @media screen and (min-width: 40em) {
     .reveal.small {
-      width: 50%;
-      max-width: 62.5remrem; } }
+      width: 40%;
+      max-width: 50remrem; } }
   @media screen and (min-width: 40em) {
     .reveal.large {
       width: 90%;
