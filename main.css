@@ -4,7 +4,9 @@ body {
 	font-size: 1em;
 }
 
-	body::-webkit-scrollbar { display: none; }
+	body::-webkit-scrollbar {
+		display: none;
+	}
 
 .flexcontainer {
   background-color: #fffffd;
@@ -28,9 +30,6 @@ body {
   overflow: scroll;
 }
 
-/*------Character Index Modal------*/
-/*http://foundation.zurb.com/sites/docs/reveal.html*/
-
 #menuToggle img {
 	position: fixed;
 	opacity: 0.5;
@@ -41,9 +40,11 @@ body {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
 }
 
-	#menuToggle img:hover { opacity: 0.9; }
+	#menuToggle img:hover {
+		opacity: 0.9;
+	}
 
-	/*------ menuToggle media queries----- */
+	/*-----menuToggle media queries-----*/
 
 	@media (min-width: 20em) {
 	/*320px (320px ~ 16px = 20em)*/
@@ -128,7 +129,7 @@ body {
 	/*------- fin. -------*/
 
 #navModal {
-  background-image: linear-gradient(#fff, #f7f7f7);
+  background-image: linear-gradient( #fff, #f7f7f7 );
 	padding: 3%;
   border-radius: 4px;
 	border-color: #ddd;
@@ -136,7 +137,9 @@ body {
   transition: all .3s;
 }
 
-	#navModal::-webkit-scrollbar { display: none; }
+	#navModal::-webkit-scrollbar {
+		display: none;
+	}
 
 
 #navigation {
@@ -151,17 +154,14 @@ body {
 
 .nav-item a {
   cursor: pointer;
-	/*font-variant: small-caps;*/
 	color: #111;
 	line-height: 2;
 	font-size: 1.2em;
 }
 
-	.nav-item a:hover { color: #444;}
+	.nav-item a:hover { color: #444; }
 
 	.nav-item a:active { color: #000; }
-
-
 
 .close-button {
 	font-size: 30px;
@@ -171,14 +171,14 @@ body {
 	padding-top: 5%;
 }
 
-	.close-button:hover { color: #444; }
+	.close-button:hover {
+		color: #444;
+	}
 
 	.close-button:focus {
 		color: #444;
 	 	border: none;
 	}
-
-/*--------ARTICLE STYLES----------*/
 
 article {
   margin: 4% 2% 1% 2%;
@@ -190,14 +190,15 @@ article {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-	article::-webkit-scrollbar { display: none; }
+	article::-webkit-scrollbar {
+		display: none;
+	}
 
-  /*--------Article Media Queries--------*/
+  /*------Article Media Queries------*/
 	@media (min-width: 20em) {
 	/*320px (320px ~ 16px = 20em)*/
     article {
       width: 14.0625em;
-
     }
   }
 
@@ -238,7 +239,7 @@ article {
 			min-height: 43.75em;
     }
   }
-  /*------- fin. -------*/
+  /*------ fin. -------*/
 
 .name {
   padding-top: 5%;
@@ -267,7 +268,7 @@ img {
   border-radius: 3px;
 }
 
-/*-------Image Media Queries-------*/
+/*--------Image Media Queries--------*/
   @media (min-width: 20em) {
   /*320px (320px ~ 16px = 20em)*/
     img {
@@ -310,13 +311,12 @@ img {
 	@media (min-width: 36.25em) {
 	/*580px (580px ~ 16px = 36.25em)*/
 		img {
-		/*275 x 202*/
 			margin: 0 10 0 12%;
+			/*275 x 202*/
 			width: 17.1875em;
 			height: 12.625em;
 		}
 	}
-
 
   @media (min-width: 40em) {
 	/*640px (740px ~16px = 40em)*/
@@ -346,16 +346,16 @@ img {
       height: 13.75em;
     }
   }
-
-  /*------- fin. -------*/
+  /*------ fin. -------*/
 
 .entry {
-  /*margin: 0px;*/
 	padding: 10% 2% 0 2%;
   background-color: #fff;
 }
 
-	.entry::-webkit-scrollbar { display: none; }
+	.entry::-webkit-scrollbar {
+		display: none;
+	}
 
   /*-------Entry Media Queries-------*/
   /*320px (320px ~ 16px = 20)*/
@@ -392,10 +392,9 @@ img {
 			margin: 0 1%;
     }
   }
+  /*------ fin. -------*/
 
-  /*------- fin. -------*/
-
-  /*----Video Player Media Queries----*/
+/*----Video Player Media Queries-----*/
 	@media (min-width: 20em) {
 	/*320px (320px ~ 16px = 20em)*/
 		iframe {
@@ -431,7 +430,6 @@ img {
 			height: 11.4375em;
 		}
 	}
-
 	/*------- fin. -------*/
 
 .episode {
@@ -473,10 +471,6 @@ p {
 			line-height: 1.5em;
 		}
 	}
-
-em {
-	text-align: center;
-}
 
 .cd-top.cd-is-visible {
   /* the button becomes visible */
@@ -521,7 +515,10 @@ em {
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
 }
-	.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+	.cd-top.cd-is-visible,
+	.cd-top.cd-fade-out,
+	.no-touch
+	.cd-top:hover {
 	  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
 	  -moz-transition: opacity .3s 0s, visibility 0s 0s;
 	  transition: opacity .3s 0s, visibility 0s 0s;
@@ -542,8 +539,7 @@ em {
 	  opacity: 1;
 	}
 
-/*--'To Top' media queries--*/
-
+/*-------'To Top' media queries------*/
 	@media (min-width: 20em) {
 	/*320px (320px ~ 16px = 20em)*/
 		.cd-top {
@@ -619,7 +615,6 @@ em {
 			right: 1em;
 		}
 	}
-
 	/*------- fin. -------*/
 
 
