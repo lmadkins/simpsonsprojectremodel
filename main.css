@@ -144,7 +144,7 @@ body {
 
 #navigation {
   list-style: none;
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .nav-item {
@@ -213,6 +213,7 @@ article {
   @media (min-width: 25em) {
 	/*400px (400px ~ 16px = 25em)*/
     article {
+			/*300px*/
       width: 18.75em;
     }
   }
@@ -220,6 +221,7 @@ article {
   @media (min-width: 30.3125em) {
 	/*485px (485px ~ 16px = 30.3125em)*/
     article {
+			/*400px*/
       width: 25em;
     }
   }
@@ -227,14 +229,14 @@ article {
   @media (min-width: 40em) {
 	/*640px (740px ~16px = 40em)*/
     article {
-      width: 18em;
-			min-height: 43.75em;
+      /*width: 18em;*/
     }
   }
 
   @media (min-width: 54.375em) {
 	/*870px (870px ~ 16px = 54.375em)*/
     article {
+			/*320px*/
       width: 20em;
 			min-height: 43.75em;
     }
@@ -266,86 +268,94 @@ article {
 img {
   margin-top: 2%;
   border-radius: 3px;
+	text-align: center;
 }
 
 /*--------Image Media Queries--------*/
+
   @media (min-width: 20em) {
   /*320px (320px ~ 16px = 20em)*/
     img {
-      margin-left: 9%;
+			margin: 0 5% 0 7%;
 			/*175 x 128*/
-      width: 10.9375em;
-      height: 8em;
+			width: 10.9375em;
+			height: 8em;
     }
   }
 
 	@media (min-width: 22.5em) {
 	/*360px (360px ~ 16px = 22.5em)*/
 		img {
-			/*210px*/
+			margin: 0 2% 0 8%;
+			/*210 x 158*/
 			width: 13.125em;
 			height: 9.875em;
 		}
 	}
 
-  @media (min-width: 25em) {
-  /*400px (400px ~ 16px = 25em)*/
-    img {
-			margin: 0 2% 0 5%;
-			/*250 x 183*/
-      width: 15.625em;
-      height: 11.4375em;
-    }
-  }
-
-  @media (min-width: 30.3125em) {
-	/*485px (485px ~ 16px = 30.3125em)*/
-    img {
-			margin: 0 5%;
-			/*300px*/
-      width: 18.75em;
-      height: 12.875em;
-    }
-  }
-
-	@media (min-width: 36.25em) {
-	/*580px (580px ~ 16px = 36.25em)*/
+	@media (min-width: 25em) {
+	/*400px (400px ~ 16px = 25em)*/
 		img {
-			margin: 0 10 0 12%;
-			/*275 x 202*/
-			width: 17.1875em;
-			height: 12.625em;
+			margin: 0 0 0 13%;
+			/*210 x 158*/
+			width: 13.125em;
+			height: 9.875em;
 		}
 	}
 
-  @media (min-width: 40em) {
-	/*640px (740px ~16px = 40em)*/
+	@media (min-width: 27.3125em) {
+	/*437px (437px ~ 16px = 27.3125em)*/
+		img {
+			margin: 0 10% 0 12%;
+			/*210 x 158*/
+			width: 13.125em;
+			height: 9.875em;
+		}
+	}
+
+
+	@media (min-width: 35.9375em) {
+	/*575px (575px ~ 16px = 35.9375em)*/
+		img {
+			margin: 0 15% 0 15%;
+			/*250 x 183*/
+			width: 15.625em;
+			height: 11.4375em;
+		}
+	}
+
+
+	@media (min-width: 40em) {
+	/*640px (640px ~16px = 40em)*/
+		img {
+			margin: 0 10% 0 10%;
+			/*250 x 183*/
+			width: 15.625em;
+			height: 11.4375em;
+		}
+  }
+
+	@media (min-width: 44.0625em) {
+	/*705px (705px ~ 16px = 44.0625em)*/
+		img {
+			margin: 0% 15%;
+			/*250 x 183*/
+			width: 15.625em;
+			height: 11.4375em;
+		}
+	}
+
+
+	@media (min-width: 48.9375em) {
+	/*783px (783px ~ 16px = 548.9375em)*/
     img {
-			margin: 0 2 0 1%;
+			margin: 0% 5%;
 			/*250 x 183*/
       width: 15.625em;
       height: 11.4375em;
     }
   }
 
-  @media (min-width: 54.375em) {
-  /*870px (870px ~ 16px = 54.375em)*/
-    img {
-			margin: 0% 1%;
-			/*275 x 202*/
-      width: 17.1875em;
-      height: 12.625em;
-    }
-  }
-
-  @media (min-width: 64em) {
-	/*1024px (1024px ~ 16px = 64em)*/
-    img {
-			/*300 x 220*/
-      width: 18.75em;
-      height: 13.75em;
-    }
-  }
   /*------ fin. -------*/
 
 .entry {
@@ -407,7 +417,8 @@ img {
 	@media (min-width: 22.5em) {
 	/*360px (360px ~ 16px = 22.5em)*/
 		iframe {
-			/*210px*/
+			margin: 0 5% 0 0%;
+			/*210 x 158*/
 			width: 13.125em;
 			height: 9.875em;
 		}
@@ -416,7 +427,7 @@ img {
 	@media (min-width: 25em) {
 	/*400px (400px ~ 16px = 25em)*/
 		iframe {
-			/*210px*/
+			/*210 x 158*/
 			width: 13.125em;
 			height: 9.875em;
 		}
@@ -425,11 +436,34 @@ img {
 	@media (min-width: 36.25em) {
 	/*580px (580px ~ 16 = 36.25em)*/
 		iframe {
-			/*250px*/
+			margin: 0 5% 0 8%;
+			/*250 x 183*/
 			width: 15.625em;
 			height: 11.4375em;
 		}
 	}
+
+	@media (min-width: 45em) {
+	/*720px (720px ~ 16px = 45em)*/
+		iframe {
+			margin: 0 5% 0 0%;
+			/*210 x 158*/
+			width: 13.125em;
+			height: 9.875em;
+		}
+	}
+
+
+  @media (min-width: 68.125em) {
+		/*1090px (1090px ~ 16px = 68.125em)*/
+		iframe {
+			margin: 1% 12% 0 0%;
+			/*250 x 183*/
+			width: 15.625em;
+			height: 11.4375em;
+		}
+	}
+
 	/*------- fin. -------*/
 
 .episode {
@@ -536,7 +570,7 @@ p {
 }
 
 	.no-touch .cd-top:hover {
-	  opacity: 1;
+	  opacity: 1.5;
 	}
 
 /*-------'To Top' media queries------*/
